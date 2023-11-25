@@ -15,7 +15,9 @@ const Header = ({ navBtn, handleMobileMenu }) => {
       <header className="flex items-center justify-center w-[100%]">
         <div className="flex md:flex-col flex-row md:gap-[20px] items-center justify-center w-[100%]">
           <div className="header-row ">
-            <div className="logo">A</div>
+            <div className="logo">
+              <Link to="/">A</Link>
+            </div>
 
             <div
               onClick={handleMobileMenu}
