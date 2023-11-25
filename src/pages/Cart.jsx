@@ -163,9 +163,7 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
   return (
     <Container>
-      <Navbar>
-        <Link to="/"></Link>
-      </Navbar>
+      <Navbar />
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
@@ -174,7 +172,9 @@ const Cart = () => {
             <TopText></TopText>
             <TopText></TopText>
           </TopTexts>
-          <TopButton type="filled">CHECKOUT NOW</TopButton>
+          <Link to="/">
+            <TopButton type="filled">CHECKOUT NOW</TopButton>
+          </Link>
         </Top>
         <Bottom>
           <Info>
@@ -227,7 +227,9 @@ const Cart = () => {
               <SummaryItemText>Total</SummaryItemText>
               <SummaryItemPrice>₦ {cart.total}</SummaryItemPrice>
             </SummaryItem>
-            <Button>CHECKOUT NOW</Button>
+            <Link to="/">
+              <Button>CHECKOUT NOW</Button>
+            </Link>
           </Summary>
         </Bottom>
       </Wrapper>

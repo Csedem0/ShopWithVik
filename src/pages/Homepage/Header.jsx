@@ -61,16 +61,26 @@ const Header = ({ navBtn, handleMobileMenu }) => {
                   </Text>
                 </Link>
               </li>
+              <li className="flex items-center justify-start ml-[32px] sm:w-[100%] w-[auto]">
+                <Link to="/contact">
+                  <Text
+                    className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
+                    variant="body6"
+                  >
+                    Contactus
+                  </Text>
+                </Link>
+              </li>
             </ul>
           </div>
-          <Link to="/contact">
+          <Link to="/login">
             <Button
               className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-[14px] text-center text-white_A700 w-[auto]"
               shape="RoundedBorder16"
               size="md"
               variant="FillRed400"
             >
-              CONTACT USS
+              Login
             </Button>
           </Link>
         </div>

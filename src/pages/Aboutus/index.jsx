@@ -17,7 +17,7 @@ const AboutusPage = ({ navBtn, handleMobileMenu }) => {
                 <div className="bg-bluegray_100_6c h-[437px]  rounded-[218px]  w-[437px]"></div>
               </div>
               <Img
-                src="images/img_unsplashebmyh7oo5wy.png"
+                src="https://images.pexels.com/photos/792345/pexels-photo-792345.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 className="absolute h-[346px] inset-[0] justify-center  m-[auto] rounded-[50%] w-[346px]"
                 alt="unsplasheBmyH7oO5wY"
               />
@@ -40,9 +40,9 @@ const AboutusPage = ({ navBtn, handleMobileMenu }) => {
                   className="font-inter font-normal leading-[40.00px] not-italic text-gray_801 text-left w-[100%]"
                   variant="body2"
                 >
-                  This dish is full of flavor and nutrition! Quinoa is a
-                  complete protein, providing all the essential amino acids your
-                  body needs, and is also a good source of fiber.
+                  This store is full of gadgets and phones! Quinoa is a complete
+                  set, providing all the essential technologies you needs, and
+                  is also a good source of network.
                 </Text>
               </div>
               <Link to="/shop">
@@ -73,7 +73,7 @@ const AboutusPage = ({ navBtn, handleMobileMenu }) => {
                 <div className="bg-bluegray_100_63 h-[445px] rounded-[222px] w-[445px]"></div>
               </div>
               <Img
-                src="images/img_unsplash5dszncvdhd0.png"
+                src="https://d2kbvjszk9d5ln.cloudfront.net/yshop/upload/pic/cool-gadgets-for-man-20230320081438125.jpg"
                 className="absolute h-[354px] inset-[0] justify-center m-[auto] rounded-[50%] w-[354px]"
                 alt="unsplash5dsZnCVDHdZero"
               />

@@ -87,7 +87,9 @@ const Navbar = () => {
           <Language></Language>
         </Left>
         <Center>
-          <Logo>A</Logo>
+          <Link to="/">
+            <Logo>A</Logo>
+          </Link>
         </Center>
         <Right>
           <Link to="/">SIGN OUT</Link>
