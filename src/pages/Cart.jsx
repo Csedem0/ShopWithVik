@@ -5,6 +5,7 @@ import { mobile } from "../responsive";
 import Announcement from "./components/Announcement";
 import Footer from "./Homepage/Footer";
 import Navbar from "./components/Navbar";
+import { Link } from "react-router-dom";
 
 const Container = styled.div``;
 
@@ -162,7 +163,9 @@ const Cart = () => {
   const cart = useSelector((state) => state.cart);
   return (
     <Container>
-      <Navbar />
+      <Navbar>
+        <Link to="/"></Link>
+      </Navbar>
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
