@@ -40,11 +40,7 @@ const Footer = () => {
               as="h4"
               variant="h4"
             >
-              <Img
-                src="images/img_logo.svg"
-                className="cursor-pointer h-[51px]"
-                alt="Logo One"
-              />
+              <div className="logo">A</div>
             </Text>
             <Text className="font-normal font-rubik leading-[35.00px] md:max-w-[100%] sm:max-w-[100%] max-w-[360px] not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1">
               Lorem ipsum dolor sit amet litam consectetur adipiscing elit,

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive";
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
+import LeavePageForm from "./LeavePageForm";
+import { useEffect } from "react";
 import {
   Img,
   Text,
@@ -145,7 +147,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                     size="md"
                     variant="FillRed400"
                   >
-                    Log in
+                    Login
                   </Button>
                 </Link>
               </div>

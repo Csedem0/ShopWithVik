@@ -34,7 +34,7 @@ const HomepagePage = ({ navBtn, handleMobileMenu }) => {
                     variant="h2"
                   >
                     <span className="md:text-[48px] text-gray_902 text-[70px] font-bold">
-                      Best Fashion Shop
+                      Best Gadget Shop
                       <br />
                       In{" "}
                     </span>
@@ -65,8 +65,8 @@ const HomepagePage = ({ navBtn, handleMobileMenu }) => {
               </div>
             </div>
             <Img
-              src="images/img_illustration.png"
-              className="md:flex-1 h-[502px] sm:h-[auto] object-cover md:w-[100%] w-[48%]"
+              src="images/phone.png"
+              className="md:flex-1 h-[550px] sm:h-[auto] object-cover md:w-[100%] w-[48%]"
               alt="illustration"
             />
           </div>
@@ -78,7 +78,7 @@ const HomepagePage = ({ navBtn, handleMobileMenu }) => {
             as="h3"
             variant="h3"
           >
-            Popular Wears
+            Popular Gadgets Now!!!
           </Text>
 
           <Products />
@@ -91,7 +91,7 @@ const HomepagePage = ({ navBtn, handleMobileMenu }) => {
               as="h3"
               variant="h3"
             >
-              Fashion? We are open now..
+              Gadgets? We are open now..
             </Text>
             <div className="flex sm:flex-col flex-row font-poppins gap-[24px] items-center justify-center md:w-[100%] w-[70%]">
               <Link to="/shop">

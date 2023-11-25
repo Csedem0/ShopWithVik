@@ -5,7 +5,7 @@ const Product = ({ item }) => {
   return (
     <div>
       <div className=" flex flex-1 flex-col gap-[41px] items-center justify-start p-[30px] sm:px-[20px] rounded-[40px] w-[100%]">
-        <Link to={"/login"}>
+        <Link to={`/product/${item._id}`}>
           <Img
             src={item.img}
             className="h-[270px] md:h-[auto] mt-[6px] object-cover w-[270px]"

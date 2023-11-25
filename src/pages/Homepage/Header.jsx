@@ -15,7 +15,7 @@ const Header = ({ navBtn, handleMobileMenu }) => {
       <header className="flex items-center justify-center w-[100%]">
         <div className="flex md:flex-col flex-row md:gap-[20px] items-center justify-center w-[100%]">
           <div className="header-row ">
-            <Img src="images/img_logo.svg" className="h-[51px]" alt="Logo" />
+            <div className="logo">A</div>
 
             <div
               onClick={handleMobileMenu}
@@ -59,27 +59,16 @@ const Header = ({ navBtn, handleMobileMenu }) => {
                   </Text>
                 </Link>
               </li>
-
-              <li className="flex items-center justify-start ml-[32px] sm:w-[100%] w-[auto]">
-                <Link to="/login">
-                  <Text
-                    className="not-italic text-red-500 text-opacity-100 text-lg font-bold text-left w-[auto]"
-                    variant="body6"
-                  >
-                    Login
-                  </Text>
-                </Link>
-              </li>
             </ul>
           </div>
-          <Link to="/login">
+          <Link to="/contact">
             <Button
               className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-[14px] text-center text-white_A700 w-[auto]"
               shape="RoundedBorder16"
               size="md"
               variant="FillRed400"
             >
-              Log in
+              CONTACT USS
             </Button>
           </Link>
         </div>

@@ -43,7 +43,7 @@ const Products = ({ cat, sort }) => {
               {cat
                 ? products.map((item) => <Product item={item} key={item.id} />)
                 : products
-                    .slice(0, 14)
+                    .slice(0, 15)
                     .map((item) => <Product item={item} key={item.id} />)}
             </div>
           </div>

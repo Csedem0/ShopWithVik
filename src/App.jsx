@@ -9,6 +9,8 @@ import Contact from "pages/Contact";
 import Shop from "pages/Shop";
 import Login from "pages/Login";
 import Register from "pages/Register";
+import Product from "./pages/Product";
+import Cart from "./pages/Cart";
 
 const App = () => {
   const [navBtn, setNavBtn] = useState(false);
@@ -52,6 +54,9 @@ const App = () => {
             <Aboutus navBtn={navBtn} handleMobileMenu={handleMobileMenu} />
           }
         />
+
+        <Route path="/product/:id" element={<Product />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
   );
