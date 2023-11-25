@@ -125,22 +125,22 @@ const Footer = () => {
               Follow Us
             </Text>
             <SocialContainer>
-              <a href="https://www.facebook.com/sobulachi.junior/">
+              <a href="">
                 <SocialIcon color="000000">
                   <Facebook />
                 </SocialIcon>
               </a>
-              <a href="https://twitter.com/Emmanuel444555?t=UlaLXcHA943urmfRjb10mg&s=09">
+              <a href="">
                 <SocialIcon color="000000">
                   <Twitter />
                 </SocialIcon>
               </a>
-              <a href="https://www.linkedin.com/in/emmanuel-chukwu-3a4546243">
+              <a href="">
                 <SocialIcon color="000000">
                   <LinkedIn />
                 </SocialIcon>
               </a>
-              <a href="https://wa.me/09159816020">
+              <a href="">
                 <SocialIcon color="000000">
                   <WhatsApp />
                 </SocialIcon>
