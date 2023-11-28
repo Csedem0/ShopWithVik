@@ -58,7 +58,7 @@ const Footer = () => {
             </Text>
             <ul className="flex flex-col font-rubik gap-[24px] items-start justify-start md:w-[100%] sm:w-[100%] w-[auto] common-column-list">
               <li className="w-[auto]">
-                <Link to="/login">
+                <Link to="">
                   <Text
                     className="cursor-pointer font-normal not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1"
                     variant="body3"
@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
 
               <li className="w-[auto]">
-                <Link to="/login">
+                <Link to="">
                   <a className="cursor-pointer font-normal not-italic text-[14px] text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1">
                     Affiliate
                   </a>
@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
 
               <li className="w-[auto]">
-                <Link to="/login">
+                <Link to="">
                   <a className="cursor-pointer font-normal not-italic text-[14px] text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1">
                     Security
                   </a>
@@ -95,7 +95,7 @@ const Footer = () => {
             </Text>
             <ul className="flex flex-col font-rubik gap-[24px] items-start justify-start md:w-[100%] sm:w-[100%] w-[auto] common-column-list">
               <li className="w-[auto]">
-                <Link to="/login">
+                <Link to="">
                   <Text
                     className="cursor-pointer font-normal not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1"
                     variant="body3"
@@ -105,7 +105,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="w-[auto]">
-                <Link to="/login">
+                <Link to="">
                   <a
                     className="cursor-pointer font-normal not-italic text-[14px] text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1"
                     href="#"
@@ -150,7 +150,7 @@ const Footer = () => {
         </div>
         <div className="flex sm:flex-col flex-row font-rubik md:gap-[40px] sm:gap-[40px] items-start justify-between w-[100%]">
           <Text className="font-normal not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1 w-[auto]">
-            © Copyright 2023 Cse. All Rights Reserved.
+            © Copyright 2023 Lechi/Cse. All Rights Reserved.
           </Text>
           <div className="flex flex-row gap-[41px] items-start justify-start w-[272px]">
             <Text className="flex-1 font-normal not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1 w-[auto]">
