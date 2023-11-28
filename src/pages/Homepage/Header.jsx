@@ -57,7 +57,7 @@ const Header = ({ navBtn, handleMobileMenu }) => {
                     className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
                     variant="body6"
                   >
-                    Aboutus
+                    About us
                   </Text>
                 </Link>
               </li>
@@ -67,7 +67,7 @@ const Header = ({ navBtn, handleMobileMenu }) => {
                     className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
                     variant="body6"
                   >
-                    Contactus
+                    Contact us
                   </Text>
                 </Link>
               </li>

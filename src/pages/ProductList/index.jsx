@@ -98,6 +98,9 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                 <div data-visible={navBtn} className="nav-links">
                   <ul className="flex md:flex-1 sm:flex-col flex-row font-opensans  items-start justify-center md:ml-[0] ml-[107px] md:w-[100%] w-[52%]">
                     <li className="flex items-center justify-start ml-[32px] sm:w-[100%] w-[auto]">
+                      <div className="logo">
+                        <Link to="/">A</Link>
+                      </div>
                       <Link to="/">
                         <Text
                           className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
@@ -123,18 +126,18 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                           className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
                           variant="body6"
                         >
-                          Aboutus
+                          About us
                         </Text>
                       </Link>
                     </li>
 
                     <li className="flex items-center justify-start ml-[32px] sm:w-[100%] w-[auto]">
-                      <Link to="/login">
+                      <Link to="/contact">
                         <Text
                           className="not-italic text-red-500 text-opacity-100 text-lg font-bold text-left w-[auto]"
                           variant="body6"
                         >
-                          Login
+                          Contact us
                         </Text>
                       </Link>
                     </li>
@@ -195,7 +198,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                   </Text>
                   <ul className="flex flex-col font-rubik gap-[24px] items-start justify-start md:w-[100%] sm:w-[100%] w-[auto] common-column-list">
                     <li className="w-[auto]">
-                      <Link to="/login">
+                      <Link to="">
                         <Text
                           className="cursor-pointer font-normal not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1"
                           variant="body3"
@@ -206,7 +209,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                     </li>
 
                     <li className="w-[auto]">
-                      <Link to="/login">
+                      <Link to="">
                         <a className="cursor-pointer font-normal not-italic text-[14px] text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1">
                           Affiliate
                         </a>
@@ -214,7 +217,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                     </li>
 
                     <li className="w-[auto]">
-                      <Link to="/login">
+                      <Link to="">
                         <a className="cursor-pointer font-normal not-italic text-[14px] text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1">
                           Security
                         </a>
@@ -232,7 +235,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                   </Text>
                   <ul className="flex flex-col font-rubik gap-[24px] items-start justify-start md:w-[100%] sm:w-[100%] w-[auto] common-column-list">
                     <li className="w-[auto]">
-                      <Link to="/login">
+                      <Link to="">
                         <Text
                           className="cursor-pointer font-normal not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1"
                           variant="body3"
@@ -242,7 +245,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                       </Link>
                     </li>
                     <li className="w-[auto]">
-                      <Link to="/login">
+                      <Link to="">
                         <a
                           className="cursor-pointer font-normal not-italic text-[14px] text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1"
                           href="#"
@@ -262,17 +265,17 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                     Follow Us
                   </Text>
                   <SocialContainer>
-                    <a href="https://www.facebook.com/sobulachi.junior/">
+                    <a href="#">
                       <SocialIcon color="000000">
                         <Facebook />
                       </SocialIcon>
                     </a>
-                    <a href="https://twitter.com/Emmanuel444555?t=UlaLXcHA943urmfRjb10mg&s=09">
+                    <a href="#">
                       <SocialIcon color="000000">
                         <Twitter />
                       </SocialIcon>
                     </a>
-                    <a href="https://www.linkedin.com/in/emmanuel-chukwu-3a4546243">
+                    <a href="#">
                       <SocialIcon color="000000">
                         <LinkedIn />
                       </SocialIcon>
