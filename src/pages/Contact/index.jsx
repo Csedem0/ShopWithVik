@@ -3,6 +3,7 @@ import React from "react";
 import { Img, Text, Line, Button, Input, TextArea } from "components";
 import Header from "pages/Homepage/Header";
 import Footer from "pages/Homepage/Footer";
+import GoogleMap from "../GoogleMap";
 
 const ContactPage = ({ navBtn, handleMobileMenu }) => {
   return (
@@ -71,17 +72,11 @@ const ContactPage = ({ navBtn, handleMobileMenu }) => {
                 Submit
               </Button>
             </div>
-            <div className="h-[550px] relative md:w-[100%] w-[48%]">
-              <Img
-                src="images/img_screenshot20220125.png"
-                className="h-[550px] m-[auto] object-cover rounded-[24px] w-[100%]"
-                alt="ScreenShot20220125"
-              />
-              <Img
-                src="images/img_location.svg"
-                className="absolute bottom-[39%] h-[60px] inset-x-[0] mx-[auto] w-[auto]"
-                alt="location"
-              />
+            <div
+              id="map-container"
+              className="h-[550px] relative md:w-[100%] w-[48%]"
+            >
+              <GoogleMap />
             </div>
           </div>
         </div>

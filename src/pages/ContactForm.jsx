@@ -1,64 +1,57 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 
-const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+const GmailEmail = () => {
+  const [emails, setEmails] = React.useState([]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  React.useEffect(() => {
+    // Load OAuth credentials from local storage
+    const credentials = JSON.parse(localStorage.getItem("gmailCredentials"));
 
-    const contactData = {
-      name,
-      email,
-      message,
-    };
+    // Create an OAuth2 client instance
+    const oauth2Client = new GoogleOAuth2Client({
+      clientId: credentials.client_id,
+      clientSecret: credentials.client_secret,
+      redirectUris: credentials.redirect_uris,
+    });
 
-    axios
-      .post("http://localhost:3000/contact-form", contactData)
-      .then(() => {
-        alert("Contact form submitted successfully!");
-        setName("");
-        setEmail("");
-        setMessage("");
+    // Get access token using stored refresh token
+    oauth2Client.setAccessToken(
+      JSON.parse(localStorage.getItem("accessToken"))
+    );
+
+    // Create a Gmail API service instance
+    const gmail = google.discover("gmail", "v1");
+
+    // Fetch emails from Gmail API
+    gmail.users.messages
+      .list({
+        userId: "me",
+        maxResults: 10,
+      })
+      .then((response) => {
+        const emailData = response.data.messages;
+        const emails = emailData.map((email) => ({
+          subject: email.snippet,
+          message: email.body,
+        }));
+        setEmails(emails);
       })
       .catch((error) => {
-        console.error("Error submitting contact form:", error);
+        console.error("Error fetching emails:", error);
       });
-  };
+  }, []);
 
   return (
     <div>
-      <h1>Contact Form</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </label>
-        <label>
-          Message:
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+      {emails.map((email) => (
+        <div key={email.subject}>
+          <h3>{email.subject}</h3>
+          <p>{email.message}</p>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default ContactForm;
+export default GmailEmail;
