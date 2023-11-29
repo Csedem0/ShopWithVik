@@ -85,6 +85,10 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
             <header className="flex items-center justify-center w-[100%]">
               <div className="flex md:flex-col flex-row md:gap-[20px] items-center justify-center w-[100%]">
                 <div className="header-row ">
+                  <div className="logo">
+                    <Link to="/">A</Link>
+                  </div>
+
                   <div
                     onClick={handleMobileMenu}
                     className="mobile-menu"
@@ -98,9 +102,6 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                 <div data-visible={navBtn} className="nav-links">
                   <ul className="flex md:flex-1 sm:flex-col flex-row font-opensans  items-start justify-center md:ml-[0] ml-[107px] md:w-[100%] w-[52%]">
                     <li className="flex items-center justify-start ml-[32px] sm:w-[100%] w-[auto]">
-                      <div className="logo">
-                        <Link to="/">A</Link>
-                      </div>
                       <Link to="/">
                         <Text
                           className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
@@ -126,33 +127,34 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                           className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
                           variant="body6"
                         >
-                          About us
+                          AboutUs
                         </Text>
                       </Link>
                     </li>
-
                     <li className="flex items-center justify-start ml-[32px] sm:w-[100%] w-[auto]">
                       <Link to="/contact">
                         <Text
-                          className="not-italic text-red-500 text-opacity-100 text-lg font-bold text-left w-[auto]"
+                          className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
                           variant="body6"
                         >
-                          Contact us
+                          ContactUs
                         </Text>
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <Link to="/login">
-                  <Button
-                    className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-[14px] text-center text-white_A700 w-[auto]"
-                    shape="RoundedBorder16"
-                    size="md"
-                    variant="FillRed400"
-                  >
-                    Login
-                  </Button>
-                </Link>
+                <div>
+                  <Link to="/login">
+                    <Button
+                      className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-[14px] text-center text-white_A700 w-[auto]"
+                      shape="RoundedBorder16"
+                      size="md"
+                      variant="FillRed400"
+                    >
+                      Login
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </header>
           </div>
@@ -179,7 +181,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                     as="h4"
                     variant="h4"
                   >
-                    F
+                    A
                   </Text>
                   <Text className="font-normal font-rubik leading-[35.00px] md:max-w-[100%] sm:max-w-[100%] max-w-[360px] not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1">
                     Lorem ipsum dolor sit amet litam consectetur adipiscing
@@ -280,7 +282,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
                         <LinkedIn />
                       </SocialIcon>
                     </a>
-                    <a href="https://wa.me/09159816020">
+                    <a href="">
                       <SocialIcon color="000000">
                         <WhatsApp />
                       </SocialIcon>
@@ -290,7 +292,8 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
               </div>
               <div className="flex sm:flex-col flex-row font-rubik md:gap-[40px] sm:gap-[40px] items-start justify-between w-[100%]">
                 <Text className="font-normal not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1 w-[auto]">
-                  © Copyright 2023 Cse. All Rights Reserved.
+                  © Copyright 2023 <a href="https://www.lechitech.com">Lechi</a>
+                  /Cse. All Rights Reserved.
                 </Text>
                 <div className="flex flex-row gap-[41px] items-start justify-start w-[272px]">
                   <Text className="flex-1 font-normal not-italic text-gray_50_a3 text-left tracking-ls05 md:tracking-ls1 sm:tracking-ls1 w-[auto]">

@@ -57,7 +57,7 @@ const Header = ({ navBtn, handleMobileMenu }) => {
                     className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
                     variant="body6"
                   >
-                    About us
+                    AboutUs
                   </Text>
                 </Link>
               </li>
@@ -67,22 +67,24 @@ const Header = ({ navBtn, handleMobileMenu }) => {
                     className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
                     variant="body6"
                   >
-                    Contact us
+                    ContactUs
                   </Text>
                 </Link>
               </li>
             </ul>
           </div>
-          <Link to="/login">
-            <Button
-              className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-[14px] text-center text-white_A700 w-[auto]"
-              shape="RoundedBorder16"
-              size="md"
-              variant="FillRed400"
-            >
-              Login
-            </Button>
-          </Link>
+          <div>
+            <Link to="/login">
+              <Button
+                className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-[14px] text-center text-white_A700 w-[auto]"
+                shape="RoundedBorder16"
+                size="md"
+                variant="FillRed400"
+              >
+                Login
+              </Button>
+            </Link>
+          </div>
         </div>
       </header>
     </div>
