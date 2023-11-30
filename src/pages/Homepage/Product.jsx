@@ -21,7 +21,7 @@ const Product = ({ item }) => {
 
           <div className="flex flex-row gap-[34px] items-center justify-between mt-[30px] md:w-[100%] w-[95%]">
             <Text className=" text-gray_900 text-left w-[auto]">
-              ₦{item.price}
+              ${item.price}
             </Text>
           </div>
         </div>
