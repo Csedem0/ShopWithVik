@@ -24,6 +24,7 @@ import {
   Twitter,
   WhatsApp,
 } from "@material-ui/icons";
+import Newsletter from "pages/components/Newsletter";
 
 const Container = styled.div``;
 
@@ -172,6 +173,7 @@ const ProductList = ({ navBtn, handleMobileMenu }) => {
             </Filter>
           </FilterContainer>
           <Products cat={cat} sort={sort} />
+          <Newsletter />
           <footer className=" flex font-raleway items-center justify-center sm:px-[20px] md:px-[40px] px-[75px] py-[50px] w-[100%]">
             <div className="flex flex-1 flex-col gap-[149px] md:gap-[40px] sm:gap-[40px] items-center justify-center w-[100%]">
               <div className="flex md:flex-col sm:flex-col flex-row md:gap-[40px] sm:gap-[40px] items-start justify-between w-[100%]">
