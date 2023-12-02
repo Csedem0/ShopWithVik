@@ -36,6 +36,7 @@ const ContactPage = ({ navBtn, handleMobileMenu }) => {
                   type="text"
                   name="Firstname"
                   placeholder="First name"
+                  required
                 ></Input>
                 <Input
                   className="font-normal not-italic p-[0] text-[16px] placeholder:text-gray_500 text-gray_500 text-left w-[100%]"
@@ -43,6 +44,7 @@ const ContactPage = ({ navBtn, handleMobileMenu }) => {
                   type="text"
                   name="Lastname"
                   placeholder="Last name"
+                  required
                 ></Input>
                 <Input
                   className="font-normal not-italic p-[0] text-[16px] placeholder:text-gray_500 text-gray_500 text-left w-[100%]"
@@ -50,12 +52,14 @@ const ContactPage = ({ navBtn, handleMobileMenu }) => {
                   type="email"
                   name="Emailaddress"
                   placeholder="Email address"
+                  required
                 ></Input>
                 <Input
                   className="font-normal not-italic p-[0] text-[16px] placeholder:text-gray_500 text-gray_500 text-left w-[100%]"
                   wrapClassName="w-[100%]"
                   name="Subject"
                   placeholder="Subject"
+                  required
                 ></Input>
                 <TextArea
                   className="font-normal leading-[normal] not-italic text-[16px] placeholder:text-gray_500 text-gray_500 text-left w-[100%]"

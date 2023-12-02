@@ -33,7 +33,7 @@ const TopButton = styled.button`
   cursor: pointer;
   border: ${(props) => props.type === "filled" && "none"};
   background-color: ${(props) =>
-    props.type === "filled" ? "black" : "transparent"};
+    props.type === "filled" ? "rgb(221, 41, 41)" : "transparent"};
   color: ${(props) => props.type === "filled" && "white"};
 `;
 
@@ -160,6 +160,11 @@ const Button = styled.button`
   font-weight: 600;
 `;
 
+const Sub = styled.button`
+  font-size: 25px;
+  font-weight: bold;
+`;
+
 const Cart = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const cart = useSelector((state) => state.cart);
@@ -183,9 +188,6 @@ const Cart = () => {
             <TopText></TopText>
             <TopText></TopText>
           </TopTexts>
-          <Link to="/">
-            <TopButton type="filled">BACK TO HOME</TopButton>
-          </Link>
         </Top>
         <Bottom>
           <Info>
@@ -201,9 +203,6 @@ const Cart = () => {
                       <b>ID:</b> {product._id}
                     </ProductId>
                     <ProductColor color={product.color} />
-                    <ProductSize>
-                      <b>Size:</b> {product.size}
-                    </ProductSize>
                   </Details>
                 </ProductDetail>
                 <PriceDetail>
@@ -249,8 +248,8 @@ const Cart = () => {
                   top: "50%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
-                  backgroundColor: "rgb(221, 41, 41)",
-                  color: "white",
+                  backgroundColor: "whitesmoke",
+                  color: "rgb(221, 41, 41)",
                   padding: "100px",
                   zIndex: "9999",
                   display: "flex",
@@ -259,9 +258,12 @@ const Cart = () => {
                   gap: "30px",
                 }}
               >
-                <h2>Submitted !!!</h2>
+                <Sub>Submitted !!!</Sub>
                 <p>Please go back home</p>
                 {/* You can add any additional message */}
+                <Link to="/home">
+                  <TopButton type="filled">BACK TO HOME</TopButton>
+                </Link>
               </div>
             )}
           </Summary>
