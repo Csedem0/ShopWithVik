@@ -12,7 +12,7 @@ export const login = async (dispatch, navigate, setError, user) => {
     const res = await publicRequest.post("/auth/login", user);
     dispatch(loginSuccess(res.data));
     if (res.status === 200) {
-      navigate("/");
+      navigate("/home");
     }
   } catch (error) {
     dispatch(loginFailure());
@@ -26,7 +26,7 @@ export const register = async (dispatch, navigate, setError, user) => {
     const res = await publicRequest.post("/auth/register", user);
     dispatch(registerSuccess(res.data));
     if (res.status === 201) {
-      navigate("/login");
+      navigate("/");
     }
   } catch (error) {
     dispatch(registerFailure());

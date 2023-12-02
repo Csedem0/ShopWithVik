@@ -87,7 +87,7 @@ const Navbar = () => {
           <Language></Language>
         </Left>
         <Center>
-          <Link to="/">
+          <Link to="/home">
             <Logo>A</Logo>
           </Link>
         </Center>

@@ -1,11 +1,12 @@
 import { Add, Remove } from "@material-ui/icons";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import Announcement from "./components/Announcement";
 import Footer from "./Homepage/Footer";
 import Navbar from "./components/Navbar";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Container = styled.div``;
 
@@ -160,7 +161,17 @@ const Button = styled.button`
 `;
 
 const Cart = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
+  const handleCheckout = () => {
+    setIsSubmitted(true);
+    // Dispatch an action to clear cart items (using Redux)
+    dispatch({ type: "CLEAR_CART_ITEMS" });
+    // You may replace 'CLEAR_CART_ITEMS' with your actual action type
+  };
+
   return (
     <Container>
       <Navbar />
@@ -173,7 +184,7 @@ const Cart = () => {
             <TopText></TopText>
           </TopTexts>
           <Link to="/">
-            <TopButton type="filled">CHECKOUT NOW</TopButton>
+            <TopButton type="filled">BACK TO HOME</TopButton>
           </Link>
         </Top>
         <Bottom>
@@ -227,9 +238,32 @@ const Cart = () => {
               <SummaryItemText>Total</SummaryItemText>
               <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
             </SummaryItem>
-            <Link to="/">
+            <Link onClick={handleCheckout}>
               <Button>CHECKOUT NOW</Button>
             </Link>
+            {/* Popup */}
+            {isSubmitted && (
+              <div
+                style={{
+                  position: "fixed",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  backgroundColor: "rgb(221, 41, 41)",
+                  color: "white",
+                  padding: "100px",
+                  zIndex: "9999",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: "30px",
+                }}
+              >
+                <h2>Submitted !!!</h2>
+                <p>Please go back home</p>
+                {/* You can add any additional message */}
+              </div>
+            )}
           </Summary>
         </Bottom>
       </Wrapper>

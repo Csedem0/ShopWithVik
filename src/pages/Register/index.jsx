@@ -8,7 +8,7 @@ import { mobile } from "../../responsive";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: wheat;
+  background-color: white;
 
   background-size: cover;
   display: flex;
@@ -19,7 +19,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 25%;
   padding: 20px;
-  background-color: wheat;
+  background-color: white;
   ${mobile({ width: "75%" })}
 `;
 
@@ -36,7 +36,7 @@ const Form = styled.form`
 const Input = styled.input`
   flex: 1;
   min-width: 40%;
-  margin: 20px 10px 0px 0px;
+  margin: 10px 0;
   padding: 10px;
   background-color: transparent;
 `;
@@ -90,6 +90,7 @@ const Register = () => {
 
           <Input
             placeholder="password"
+            type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
 

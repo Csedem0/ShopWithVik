@@ -16,7 +16,7 @@ const Header = ({ navBtn, handleMobileMenu }) => {
         <div className="flex md:flex-col flex-row md:gap-[20px] items-center justify-center w-[100%]">
           <div className="header-row ">
             <div className="logo">
-              <Link to="/">A</Link>
+              <Link to="/home">A</Link>
             </div>
 
             <div
@@ -32,7 +32,7 @@ const Header = ({ navBtn, handleMobileMenu }) => {
           <div data-visible={navBtn} className="nav-links">
             <ul className="flex md:flex-1 sm:flex-col flex-row font-opensans  items-start justify-center md:ml-[0] ml-[107px] md:w-[100%] w-[52%]">
               <li className="flex items-center justify-start ml-[32px] sm:w-[100%] w-[auto]">
-                <Link to="/">
+                <Link to="/home">
                   <Text
                     className="not-italic text-red-500 text-opacity-100 text-lg font-bold  text-left w-[auto]"
                     variant="body6"
@@ -74,7 +74,7 @@ const Header = ({ navBtn, handleMobileMenu }) => {
             </ul>
           </div>
           <div>
-            <Link to="/login">
+            <Link to="/">
               <Button
                 className="cursor-pointer font-semibold sm:hidden leading-[normal] min-w-[112px] md:ml-[0] ml-[25px] text-[14px] text-center text-white_A700 w-[auto]"
                 shape="RoundedBorder16"
